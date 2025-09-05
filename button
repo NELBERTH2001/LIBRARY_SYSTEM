@@ -1,0 +1,8 @@
+ <button class="btn btn-primary btn-sm" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#borrowModal"
+                    data-id="<?php echo (int)$b['id']; ?>"
+                    data-title="<?php echo htmlspecialchars($b['title']); ?>"
+                    <?php echo ($b['copies_available']>0 && $b['status']=='available')?'':'disabled'; ?>>
+             
+            </button>
